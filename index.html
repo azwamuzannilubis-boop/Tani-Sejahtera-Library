@@ -43,23 +43,20 @@
         </a>
     </section>
 
-<!-- VIDEO YOUTUBE -->
-<section class="video">
-    <h2>Video Favorit Saya</h2>
+.video {
+    padding: 50px 0;
+    width: 100%;
+}
 
-    <div class="video-container">
-        <iframe 
-            src="https://www.youtube.com/embed/NSAOrGb9orM"
-            title="Video Favorit Azwa"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen>
-        </iframe>
-    </div>
-</section>
+.video-container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto; /* ini yang membuat rata kiri-kanan */
+}
 
-    <footer>
-        <p>© 2026 Perpustakaan Umum Azwa</p>
-    </footer>
-
-</body>
-</html>
+.video-container iframe {
+    width: 100%;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
