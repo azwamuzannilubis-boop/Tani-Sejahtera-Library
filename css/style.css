@@ -45,6 +45,21 @@ nav a:hover {
     color: #ffd700;
 }
 
+/* LOGIN BUTTON */
+.login-btn {
+    background: #2ecc71;
+    padding: 8px 18px;
+    border-radius: 30px;
+    font-weight: 600;
+    margin-left: 25px;
+    transition: 0.3s;
+}
+
+.login-btn:hover {
+    background: #27ae60;
+    color: white;
+}
+
 /* ================= HERO ================= */
 .hero {
     height: 90vh;
@@ -183,4 +198,44 @@ footer h4 {
     .video-container iframe {
         height: 250px;
     }
+}
+
+/* ================= FORM LOGIN & REGISTER ================= */
+
+.form-container {
+    max-width: 420px;
+    margin: 120px auto;
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.form-container h2 {
+    margin-bottom: 25px;
+}
+
+.form-container input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 10px;
+}
+
+.btn-green {
+    background: #2ecc71;
+    color: white;
+    padding: 12px;
+    border-radius: 30px;
+    border: none;
+    width: 100%;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-green:hover {
+    background: #27ae60;
 }
