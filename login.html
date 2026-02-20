@@ -1,21 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login | AzwaLib</title>
+<link rel="stylesheet" href="css/style.css">
+<style>
+.toggle-text {
+    margin-top: 15px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #ffd700;
+}
+.hidden {
+    display: none;
+}
+</style>
+</head>
+<body>
+
 <div class="form-container">
-    <h2>FORMULIR PENDAFTARAN</h2>
 
-    <input type="text" id="firstName" placeholder="First Name">
-    <input type="text" id="lastName" placeholder="Last Name">
-    <input type="text" id="phone" placeholder="No Handphone">
-    <input type="email" id="email" placeholder="Email">
-    <input type="password" id="password" placeholder="Password">
+    <!-- LOGIN -->
+    <div id="loginForm">
+        <h2>LOGIN</h2>
 
-    <button class="btn-green" onclick="register()">DAFTAR</button>
+        <input type="text" id="loginFirstName" placeholder="First Name">
+        <input type="text" id="loginLastName" placeholder="Last Name">
+        <input type="password" id="loginPassword" placeholder="Password">
 
-    <hr style="margin:30px 0;">
+        <button class="btn-green" onclick="login()">LOGIN</button>
 
-    <h2>LOGIN</h2>
+        <p class="toggle-text" onclick="showRegister()">
+            Belum punya akun? Daftar di sini
+        </p>
+    </div>
 
-    <input type="text" id="firstNameLogin" placeholder="First Name">
-    <input type="text" id="lastNameLogin" placeholder="Last Name">
-    <input type="password" id="passwordLogin" placeholder="Password">
+    <!-- REGISTER -->
+    <div id="registerForm" class="hidden">
+        <h2>DAFTAR AKUN</h2>
 
-    <button class="btn-green" onclick="login()">LOGIN</button>
+        <input type="text" id="regFirstName" placeholder="First Name">
+        <input type="text" id="regLastName" placeholder="Last Name">
+        <input type="text" id="regPhone" placeholder="No Handphone">
+        <input type="email" id="regEmail" placeholder="Email">
+        <input type="password" id="regPassword" placeholder="Password">
+
+        <button class="btn-green" onclick="register()">DAFTAR</button>
+
+        <p class="toggle-text" onclick="showLogin()">
+            Sudah punya akun? Login di sini
+        </p>
+    </div>
+
 </div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
