@@ -1,10 +1,10 @@
 // ================= REGISTER =================
 function register() {
-    const firstName = document.getElementById("firstName").value;
-    const lastName = document.getElementById("lastName").value;
-    const phone = document.getElementById("phone").value;
-    const email = document.getElementById("email").value;
-    const password = document.getElementById("password").value;
+    const firstName = document.getElementById("regFirstName").value;
+    const lastName = document.getElementById("regLastName").value;
+    const phone = document.getElementById("regPhone").value;
+    const email = document.getElementById("regEmail").value;
+    const password = document.getElementById("regPassword").value;
 
     if (!firstName || !lastName || !phone || !email || !password) {
         alert("Harap isi semua data!");
@@ -13,8 +13,6 @@ function register() {
 
     localStorage.setItem("firstName", firstName);
     localStorage.setItem("lastName", lastName);
-    localStorage.setItem("phone", phone);
-    localStorage.setItem("email", email);
     localStorage.setItem("password", password);
     localStorage.setItem("isLogin", "true");
 
@@ -24,9 +22,9 @@ function register() {
 
 // ================= LOGIN =================
 function login() {
-    const firstName = document.getElementById("firstNameLogin").value;
-    const lastName = document.getElementById("lastNameLogin").value;
-    const password = document.getElementById("passwordLogin").value;
+    const firstName = document.getElementById("loginFirstName").value;
+    const lastName = document.getElementById("loginLastName").value;
+    const password = document.getElementById("loginPassword").value;
 
     if (
         firstName === localStorage.getItem("firstName") &&
@@ -53,16 +51,13 @@ function logout() {
     window.location.href = "login.html";
 }
 
-// ================= CONTACT =================
-function kirimPesan() {
-    const email = document.getElementById("emailContact").value;
-    const phone = document.getElementById("phoneContact").value;
-    const pesan = document.getElementById("pesan").value;
+// ================= TOGGLE =================
+function showRegister() {
+    document.getElementById("loginForm").classList.add("hidden");
+    document.getElementById("registerForm").classList.remove("hidden");
+}
 
-    if (!email || !phone || !pesan) {
-        alert("Harap isi semua field!");
-        return;
-    }
-
-    alert("Pesan berhasil dikirim!");
+function showLogin() {
+    document.getElementById("registerForm").classList.add("hidden");
+    document.getElementById("loginForm").classList.remove("hidden");
 }
