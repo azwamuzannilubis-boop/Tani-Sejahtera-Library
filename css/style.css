@@ -290,3 +290,55 @@ footer h4 {
 .btn-contact:hover {
     background: #27ae60;
 }
+
+.promosi {
+    padding: 50px 10%;
+    background-color: #fdfaf6;
+    text-align: center;
+}
+
+.promosi h2 {
+    margin-bottom: 30px;
+    color: #2e7d32;
+}
+
+.promo-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.promo-card {
+    background: #ffffff;
+    width: 300px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.promo-card:hover {
+    transform: translateY(-8px);
+}
+
+.promo-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.btn-lelang {
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: #4caf50;
+    border: none;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btn-lelang:hover {
+    background-color: #2e7d32;
+}
