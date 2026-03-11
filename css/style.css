@@ -342,3 +342,8 @@ footer h4 {
 .btn-lelang:hover {
     background-color: #2e7d32;
 }
+
+.promo-card h3,
+.promo-card p {
+    color: black;
+}
