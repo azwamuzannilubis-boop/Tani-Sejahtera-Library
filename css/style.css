@@ -479,25 +479,6 @@ nav a {
     display: block;
 }
 
-.card img {
-  height: 200px;
-  object-fit: cover;
-}
-
-.card {
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  border-radius: 12px;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-}
-
-.btn-success {
-  border-radius: 8px;
-}
-
 const buttons = document.querySelectorAll(".btn-lelang");
 
 buttons.forEach(button => {
