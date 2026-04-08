@@ -60,6 +60,56 @@ nav a:hover {
     background:#43a047;
 }
 
+/* Container Dropdown */
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+/* Tombol utama (Layanan) */
+.dropbtn {
+    cursor: pointer;
+}
+
+/* Kotak Dropdown (Sembunyi secara default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff; /* Latar belakang putih */
+    min-width: 220px; /* Sedikit lebih lebar agar teks tidak terpotong */
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.1); /* Efek bayangan halus */
+    z-index: 1000;
+    border-radius: 10px;
+    margin-top: 5px;
+    overflow: hidden;
+    text-align: left;
+}
+
+/* Link di dalam dropdown */
+.dropdown-content a {
+    color: #333333 !important; /* Teks hitam */
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 500;
+    border-bottom: 1px solid #f1f1f1;
+    transition: 0.3s;
+}
+
+/* Hover pada item dropdown */
+.dropdown-content a:hover {
+    background-color: #f5f5f5;
+    color: #1B5E20 !important; /* Berubah jadi hijau saat disentuh */
+    padding-left: 20px; /* Efek geser sedikit agar interaktif */
+}
+
+/* Tampilkan menu saat mouse diarahkan ke area dropdown */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
 /* ================= HERO ================= */
 .hero {
     height: 90vh;
