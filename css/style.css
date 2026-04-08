@@ -1,43 +1,53 @@
-<style>
-body{font-family:sans-serif;background:#fff;color:#000}
-header{background:#2e7d32;color:#fff;display:flex;justify-content:space-between;padding:15px}
-nav a{color:#fff;margin:10px;text-decoration:none}
+body{
+    font-family:'Poppins',sans-serif;
+    background:#f5f6fa;
+}
 
-.dropdown{position:relative;display:inline-block}
-.dropdown-content{display:none;position:absolute;background:#fff;color:#000;min-width:200px}
-.dropdown-content a{display:block;padding:10px;color:#000}
-.dropdown:hover .dropdown-content{display:block}
+/* NAVBAR */
+.navbar{
+    background:#0f172a;
+}
+.navbar-brand{
+    color:#facc15 !important;
+    font-weight:bold;
+}
+.nav-link{
+    color:white !important;
+}
+.btn-login{
+    background:#facc15;
+    border-radius:20px;
+}
 
-.hero{text-align:center;padding:100px}
+/* HERO */
+.hero{
+    padding:120px 20px;
+    text-align:center;
+    color:white;
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+    url('https://images.unsplash.com/photo-1589927986089-35812388d1f4');
+    background-size:cover;
+}
 
-.stats{display:flex;justify-content:space-around;padding:40px}
-.stats div{font-size:24px}
+/* CARD */
+.card-custom{
+    border:none;
+    border-radius:15px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+.card-custom:hover{
+    transform:translateY(-5px);
+}
 
-.video-grid .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;padding:20px}
-iframe{width:100%;height:200px}
+/* SECTION */
+.section{
+    padding:60px 0;
+}
 
-table{width:80%;margin:auto;border-collapse:collapse}
-th,td{border:1px solid #000;padding:10px}
-
-.testimoni{text-align:center;padding:40px;font-style:italic}
-</style>
-
-<!-- ================= AGENDA PAGE ================= -->
-<!-- agenda.html -->
-<section>
-<h1>Agenda</h1>
-<ul>
-<li>2 Mei - Pelatihan Digital</li>
-<li>10 Mei - Workshop Petani</li>
-<li>23 Mei - Seminar Pertanian</li>
-<li>27 Mei - Expo Hasil Tani</li>
-</ul>
-</section>
-
-
-<!-- ================= PROMOSI PAGE ================= -->
-<!-- promosi.html -->
-<section>
-<h1>Promosi Hasil Panen</h1>
-<p>Isi dari promosi lama dipindahkan ke sini</p>
-</section>
+/* VIDEO */
+iframe{
+    width:100%;
+    height:200px;
+    border-radius:10px;
+}
