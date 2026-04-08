@@ -1,1 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Promosi Hasil Panen</title>
 
+<!-- BOOTSTRAP -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+body{
+    background:#fff;
+    font-family:'Poppins',sans-serif;
+}
+
+.navbar{
+    background:#2e7d32;
+}
+
+.navbar a{
+    color:#fff !important;
+}
+
+.card img{
+    height:200px;
+    object-fit:cover;
+}
+
+.btn-lelang{
+    background:#2e7d32;
+    color:#fff;
+    border:none;
+}
+
+.btn-lelang:hover{
+    background:#1b5e20;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg">
+<div class="container">
+<a class="navbar-brand text-white" href="index.html">Tani Sejahtera</a>
+
+<div class="collapse navbar-collapse">
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+
+<li class="nav-item"><a class="nav-link active" href="#">Promosi</a></li>
+
+<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+
+</ul>
+</div>
+</div>
+</nav>
+
+<!-- TITLE -->
+<div class="container mt-5 text-center">
+<h2>Promosi & Lelang Hasil Panen</h2>
+<p>Temukan hasil panen terbaik langsung dari petani</p>
+</div>
+
+<!-- PRODUK -->
+<div class="container mt-4">
+<div class="row g-4">
+
+<!-- CABAI -->
+<div class="col-md-6">
+<div class="card shadow">
+<img src="cabai.jpg" alt="Cabai Merah">
+<div class="card-body">
+<h5>Cabai Merah Super</h5>
+<p>Estimasi Panen: 15 Juli 2026</p>
+<p>Kualitas: Grade A</p>
+<p>Harga Awal: Rp 28.000/kg</p>
+<button class="btn btn-lelang">Ajukan Penawaran</button>
+</div>
+</div>
+</div>
+
+<!-- JAGUNG -->
+<div class="col-md-6">
+<div class="card shadow">
+<img src="jagung.jpg" alt="Jagung Manis">
+<div class="card-body">
+<h5>Jagung Manis Premium</h5>
+<p>Estimasi Panen: 20 Agustus 2026</p>
+<p>Kualitas: Premium</p>
+<p>Harga Awal: Rp 6.000/kg</p>
+<button class="btn btn-lelang">Ajukan Penawaran</button>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<!-- JS ALERT -->
+<script>
+const buttons = document.querySelectorAll(".btn-lelang");
+
+buttons.forEach(btn=>{
+    btn.addEventListener("click", function(){
+        alert("Silakan hubungi petani melalui menu Contact untuk negosiasi.");
+    });
+});
+</script>
+
+</body>
+</html>
