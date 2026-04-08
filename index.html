@@ -14,18 +14,28 @@
 
 <header>
     <div class="logo">Tani Sejahtera Library</div>
+
     <nav>
+        <!-- Menu utama -->
+        <a href="index.html">Home</a>
+
+        <!-- Dropdown Layanan -->
         <div class="dropdown">
-    <a href="#" class="dropbtn">Layanan ▾</a>
-    <div class="dropdown-content">
-        <a href="koleksi.html">Koleksi Digital</a>
-        <a href="#promosi">Promosi Hasil Panen</a>
-        <a href="#">Forum Diskusi</a>
-        <a href="#">Kemitraan & Distribusi</a>
-        <a href="koleksi.html">Koleksi</a>
+            <a href="#" class="dropbtn">Layanan ▾</a>
+            <div class="dropdown-content">
+                <a href="koleksi.html">Koleksi Digital</a>
+                <a href="#promosi">Promosi Hasil Panen</a>
+                <a href="#">Forum Diskusi</a>
+                <a href="#">Kemitraan & Distribusi</a>
+            </div>
+        </div>
+
+        <!-- Menu lain (JANGAN dimasukkan ke dropdown) -->
         <a href="kegiatan.html">Event</a>
         <a href="about.html">About Us</a>
         <a href="contact.html">Contact Us</a>
+
+        <!-- Login / Logout -->
         <a href="#" onclick="logout()" class="login-btn">Logout</a>
     </nav>
 </header>
