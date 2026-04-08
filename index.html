@@ -19,20 +19,50 @@ body{
 }
 
 /* NAVBAR */
-.navbar{
-    background:#0f172a;
-}
-.navbar-brand{
-    color:#facc15 !important;
-    font-weight:bold;
-}
-.nav-link{
-    color:white !important;
-}
-.btn-login{
-    background:#facc15;
-    border-radius:20px;
-}
+<nav class="navbar navbar-expand-lg">
+<div class="container">
+<a class="navbar-brand" href="index.html">Tani Sejahtera</a>
+
+<button class="navbar-toggler bg-light" data-bs-toggle="collapse" data-bs-target="#nav"></button>
+
+<div class="collapse navbar-collapse" id="nav">
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Layanan</a>
+<ul class="dropdown-menu">
+<li><a class="dropdown-item" href="koleksi.html">Koleksi Digital</a></li>
+<li><a class="dropdown-item" href="promosi.html">Promosi Hasil Panen</a></li>
+<li><a class="dropdown-item" href="#">Forum Diskusi</a></li>
+<li><a class="dropdown-item" href="#">Kemitraan</a></li>
+</ul>
+</li>
+
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Program</a>
+<ul class="dropdown-menu">
+<li><a class="dropdown-item" href="agenda.html">Agenda</a></li>
+<li><a class="dropdown-item" href="kegiatan.html">Aktivitas</a></li>
+</ul>
+</li>
+
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">About</a>
+<ul class="dropdown-menu">
+<li><a class="dropdown-item" href="cv.html">Tentang Saya</a></li>
+<li><a class="dropdown-item" href="about.html">Tentang Perpustakaan</a></li>
+</ul>
+</li>
+
+<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+<li class="nav-item"><a class="nav-link btn-login px-3" href="login.html">Login</a></li>
+
+</ul>
+</div>
+</div>
+</nav>
 
 /* HERO */
 .hero{
