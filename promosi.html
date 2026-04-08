@@ -44,16 +44,43 @@ body{
 <!-- NAVBAR -->
 <nav class="navbar navbar-expand-lg">
 <div class="container">
-<a class="navbar-brand text-white" href="index.html">Tani Sejahtera</a>
+<a class="navbar-brand" href="index.html">Tani Sejahtera</a>
 
-<div class="collapse navbar-collapse">
+<button class="navbar-toggler bg-light" data-bs-toggle="collapse" data-bs-target="#nav"></button>
+
+<div class="collapse navbar-collapse" id="nav">
 <ul class="navbar-nav ms-auto">
 
 <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
 
-<li class="nav-item"><a class="nav-link active" href="#">Promosi</a></li>
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Layanan</a>
+<ul class="dropdown-menu">
+<li><a class="dropdown-item" href="koleksi.html">Koleksi Digital</a></li>
+<li><a class="dropdown-item" href="promosi.html">Promosi Hasil Panen</a></li>
+<li><a class="dropdown-item" href="#">Forum Diskusi</a></li>
+<li><a class="dropdown-item" href="#">Kemitraan</a></li>
+</ul>
+</li>
+
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Program</a>
+<ul class="dropdown-menu">
+<li><a class="dropdown-item" href="agenda.html">Agenda</a></li>
+<li><a class="dropdown-item" href="kegiatan.html">Aktivitas</a></li>
+</ul>
+</li>
+
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">About</a>
+<ul class="dropdown-menu">
+<li><a class="dropdown-item" href="cv.html">Tentang Saya</a></li>
+<li><a class="dropdown-item" href="about.html">Tentang Perpustakaan</a></li>
+</ul>
+</li>
 
 <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+<li class="nav-item"><a class="nav-link btn-login px-3" href="login.html">Login</a></li>
 
 </ul>
 </div>
