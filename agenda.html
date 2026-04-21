@@ -1,12 +1,83 @@
-<div class="container section">
-<h2 class="text-center">Agenda</h2>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Kegiatan - Tani Sejahtera Library</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
 
-<div class="row g-4 mt-3">
+<script src="js/script.js"></script>
+<script>
+    checkLogin();
+</script>
 
-<div class="col-md-3"><div class="card card-custom p-3">2 Mei<br>Pelatihan Digital</div></div>
-<div class="col-md-3"><div class="card card-custom p-3">10 Mei<br>Workshop</div></div>
-<div class="col-md-3"><div class="card card-custom p-3">23 Mei<br>Seminar</div></div>
-<div class="col-md-3"><div class="card card-custom p-3">27 Mei<br>Expo</div></div>
+<!-- NAVBAR -->
+<header>
+    <div class="logo">🌱Tani Sejahtera Library</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="#">Koleksi</a>
+        <a href="#">Berita</a>
+        <a href="kegiatan.html">Aktivitas</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="#" onclick="logout()">Logout</a>
+    </nav>
+</header>
 
-</div>
-</div>
+<!-- EVENT -->
+<section id="event">
+    <h2>Event Pertanian</h2>
+
+    <div class="event-container">
+   
+        <!-- EVENT 1 -->
+        <div class="event-card">
+            <img src="talk-tani.jpg" alt="Talk Tani">
+            <div class="event-content">
+                <h3>Talk Tani</h3>
+                <p>
+                    Diskusi santai bersama startup pertanian sukses 
+                    tentang strategi memasarkan hasil panen secara digital.
+                </p>
+                <span>4 Mei 2026</span>
+            </div>
+        </div>
+
+        <!-- EVENT 2 -->
+        <div class="event-card">
+            <img src="pasar-tani.jpg" alt="Pasar Tani">
+            <div class="event-content">
+                <h3>Pasar Tani Mingguan</h3>
+                <p>
+                    Ruang bagi petani lokal untuk menjual hasil panen 
+                    langsung kepada pengunjung perpustakaan.
+                </p>
+                <span>12 Mei 2026</span>
+            </div>
+        </div>
+
+        <!-- EVENT 3 -->
+        <div class="event-card">
+            <img src="benih.jpg" alt="Festival Benih">
+            <div class="event-content">
+                <h3>Festival Benih Gratis</h3>
+                <p>
+                    Acara tukar-menukar benih tanaman antar pengunjung 
+                    dan komunitas pecinta tanaman.
+                </p>
+                <span>26 Mei 2026</span>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <h3>© 2026 Tani Sejahtera Library</h3>
+    <p>Azwa Muzanni Lubis</p>
+</footer>
+
+</body>
+</html>
